@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sofa - Toko Furnitur Premium</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-couch me-2"></i>Mega Sofa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4 animate-fade-in">Selamat Datang di Mega Sofa</h1>
+                    <p class="lead mb-4">Temukan sofa dan furnitur premium yang nyaman untuk rumah impian Anda. Kualitas terbaik dengan harga terjangkau.</p>
+                    <a href="#products" class="btn btn-warning btn-lg me-3">Lihat Produk</a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Mega%20Sofa,%20saya%20ingin%20bertanya%20tentang%20sofa" class="btn btn-success btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sofa Premium" class="img-fluid rounded shadow-lg hero-img animate-zoom-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-3">Koleksi Sofa Kami</h2>
+                <p class="lead text-muted">Pilih dari berbagai model sofa modern dan klasik.</p>
+            </div>
+            <div class="row g-4" id="productGrid">
+                <!-- Produk akan diisi via JS untuk dinamis -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tentang Mega Sofa" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Tentang Mega Sofa</h2>
+                    <p class="lead mb-4">Mega Sofa adalah toko furnitur terpercaya sejak 2010, spesialis dalam sofa berkualitas tinggi. Kami menggunakan bahan premium seperti kulit asli dan kain anti-noda untuk kenyamanan maksimal.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-success fs-4 me-3"></i>
+                                <span>Gratis Ongkir Jabodetabek</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-success fs-4 me-3"></i>
+                                <span>Garansi 5 Tahun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="py-5 bg-warning">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-3">Apa Kata Pelanggan</h2>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <p class="fs-5 text-dark">"Sofa yang sangat nyaman! Pelayanan ramah dan cepat."</p>
+                            <h5 class="fw-bold">Rina S.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <p class="fs-5 text-dark">"Kualitas premium, harga worth it. Rekomendasi banget!"</p>
+                            <h5 class="fw-bold">Budi A.</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg">Kirim via WhatsApp</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-map-marker-alt me-2"></i>Alamat</h5>
+                            <p class="card-text">Jl. Mega Raya No. 123, Jakarta Selatan</p>
+                            <h5 class="card-title"><i class="fas fa-phone me-2"></i>Telepon</h5>
+                            <p class="card-text">+6285-1470-14137</p>
+                            <h5 class="card-title"><i class="fas fa-clock me-2"></i>Jam Buka</h5>
+                            <p class="card-text">Senin - Sabtu: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <!-- Instagram Embed Placeholder -->
+                    <div class="mt-4">
+                        <h5>Ikuti Kami di Instagram</h5>
+                        <a href="https://www.instagram.com/megasoja" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-instagram me-2"></i>@megasofa
+                        </a>
+                        <!-- Untuk embed real, gunakan: <blockquote class="instagram-media" data-instgrm-permalink="..."></blockquote> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-couch me-2"></i>Mega Sofa</h5>
+                    <p>Furnitur premium untuk kenyamanan rumah Anda.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://wa.me/6281234567890" class="text-white me-3" target="_blank"><i class="fab fa-whatsapp fs-4"></i></a>
+                    <a href="https://www.instagram.com/megasoja" class="text-white me-3" target="_blank"><i class="fab fa-instagram fs-4"></i></a>
+                    <a href="mailto:info@megasoja.com" class="text-white"><i class="fas fa-envelope fs-4"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2023 Mega Sofa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20produk%20Mega%20Sofa" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Modal Gallery untuk Produk -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Detail Produk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Produk" class="img-fluid rounded">
+                    <p id="modalDesc" class="mt-3"></p>
+                    <p id="modalPrice" class="fw-bold fs-5 text-success"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="openWhatsAppFromModal()">Pesan via WA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
+</body>
+</html>
